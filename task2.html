@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball{
+            display: flex;
+           margin: 200px 600px;
+        }
+        .el1 {
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            border-radius: 100%;
+            padding: 0px;
+            margin: 20px;
+            animation: ball1 1s infinite alternate ease-in-out;
+            background-color: aquamarine;
+        }
+        @keyframes ball1{
+            0%{
+                 transform: translateY(100px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+            background-color{
+                background-color: brown;
+             }
+        }
+        .el2{
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            border-radius: 100%;
+            padding: 0px;
+            margin: 20px;
+            animation: ball2 3s infinite alternate ease-in-out;
+            background-color: aquamarine;
+        }
+        @keyframes ball2{
+            0%{
+                 transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(100px);
+            }
+            background-color{
+                background-color: brown;
+             }
+        }
+        .el3 {
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            border-radius: 100%;
+            margin: 20px;
+            animation: ball3 3s infinite alternate ease-in-out;
+            background-color: aquamarine;
+        }
+        @keyframes ball3{
+            0%{
+                 transform: translateY(100px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+            background-color{
+                background-color: brown;
+             }
+        }
+        .ball2{
+            display: flex;
+            margin: 200px 600px;
+        }
+        .al1,.al2,.al3{
+            border: 1px solid black;
+            border-radius: 100%;
+            box-shadow: 0px 0px 4px 5px rgb(68, 197, 240) ;
+            width: 10px;
+            height: 10px;
+            margin: 10px;
+            /* background-color: rgb(24, 25, 24); */
+            animation: al1 3s infinite;
+           
+        }
+        .al2{
+            animation-delay: 1s;
+        }
+        .al3{
+            animation-delay: 1.5s;
+        }
+        @keyframes al1{
+            0%{
+                transform: scale(0);
+              
+            }
+            50%{
+                transform: scale(1.5);
+            }
+            100%{
+                transform: scale(0);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="ball">
+       <div class="el1"></div><br>
+       <div class="el2"></div><br>
+       <div class="el3"></div><br>
+    </div>
+    <div class="ball2">
+        <div class="al1"></div>
+        <div class="al2"></div>
+        <div class="al3"></div>
+    </div>
+</body>
+</html>

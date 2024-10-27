@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .btn1{
+            border: 1px solid black;
+            width: fit-content;
+           
+         }
+         .img1{
+            width: 20%;
+            margin: 100px 600px;  
+         }
+         .btn1:hover~.img1{
+           translate: -0px -200px ;
+           transition: 2s ;
+         }
+         .btn2:hover~.img1{
+            transform: scale(-1.8);
+            transition: 3s;
+         }
+         .btn3:hover~.img1{
+             transform: rotate(360deg);
+             transition: 2s;
+         }
+         .btn4:hover~.img1{
+             transform: skew(20deg ) rotate(90deg) scale(1.8);
+             transition: 1s;
+         }
+    </style>
+</head>
+<body>
+    <div class="btn1">
+        <button>Button 1</button>
+    </div><br>
+    <div class="btn2">
+        <button>Button 2</button>
+    </div><br>
+    <div class="btn3">
+        <button>Button 3</button>
+    </div><br>
+    <div class="btn4">
+        <button class="a1">Button 4</button>
+    </div><br>
+    <div class="img1">
+        <img src="captain ameraca.jpeg" alt="">
+    </div>
+</body>
+</html>
